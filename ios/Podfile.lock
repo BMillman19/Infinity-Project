@@ -1,0 +1,5 @@
+PODS:
+  - PrettyKit (0.2.0)
+
+DEPENDENCIES:
+  - PrettyKit
