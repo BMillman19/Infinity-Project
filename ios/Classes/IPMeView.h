@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IPMeView : UIView
+@interface IPMeView : UIScrollView
 
 @end
