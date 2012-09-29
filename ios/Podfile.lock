@@ -1,5 +1,20 @@
-PODS:
-  - PrettyKit (0.2.0)
 
-DEPENDENCIES:
-  - PrettyKit
+DEPENDENCIES: 
+- AFNetworking
+- PrettyKit
+- SSPullToRefresh
+- SSToolkit
+
+COCOAPODS: 0.14.0
+
+PODS: 
+- AFNetworking (1.0)
+- PrettyKit (0.2.0)
+- SSPullToRefresh (1.0.1)
+- SSToolkit (1.0.2)
+
+SPEC CHECKSUMS: 
+  AFNetworking: e9e0911a6afd846691672a4d832fb531e8bae72f
+  SSPullToRefresh: 135162e65f4a5ad008f970b48886572f6f711bba
+  SSToolkit: 852044205c6a15586431e90f46b2ef01f693285a
+  PrettyKit: 44b8f06f3719579880d2e11cd6498b7464b3b0fa

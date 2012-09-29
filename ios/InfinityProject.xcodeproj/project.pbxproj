@@ -320,6 +320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/InfinityProject-Prefix.pch";
 				INFOPLIST_FILE = "Classes/InfinityProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "InfinityProject-Info.plist";
 				WRAPPER_EXTENSION = app;
@@ -333,6 +334,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/InfinityProject-Prefix.pch";
 				INFOPLIST_FILE = "Classes/InfinityProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "InfinityProject-Info.plist";
 				WRAPPER_EXTENSION = app;
