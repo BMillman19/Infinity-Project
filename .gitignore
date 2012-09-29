@@ -12,7 +12,10 @@ project.xcworkspace
 xcuserdata
 profile
 *.moved-aside
+
+# CocoaPods
 ios/Pods
+ios/Podfile.lock
 
 # Mac
 .DS_Store
