@@ -8,11 +8,14 @@
 
 #import "IPAppDelegate.h"
 
+#import "IPContestViewController.h"
 #import "IPMeViewController.h"
+#import "IPContestModel.h"
 
 @interface IPAppDelegate ()
 
 // The main view controllers
+@property (nonatomic, strong) IPContestViewController *contestViewController;
 @property (nonatomic, strong) IPMeViewController *meViewController;
 
 @end
@@ -21,6 +24,7 @@
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
+@synthesize contestViewController = _contestViewController;
 @synthesize meViewController = _meViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -28,6 +32,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    //Set up the contests tab
+    self.contestViewController = [[IPContestViewController alloc] init];
+    UINavigationController *contestNavController = [[UINavigationController alloc] initWithRootViewController:self.contestViewController];
+    UITabBarItem *contestTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Contests" image:nil tag:0];
+    [contestNavController setTabBarItem:contestTabBarItem];
+        
     // Set up the current user profile tab
     self.meViewController = [[IPMeViewController alloc] init];
     UINavigationController *meNavController = [[UINavigationController alloc] initWithRootViewController:self.meViewController];
@@ -37,7 +47,7 @@
     // Set up the tab bar controller
     self.tabBarController = [[UITabBarController alloc] init];
     [self.tabBarController setDelegate:self];
-    [self.tabBarController setViewControllers:[NSArray arrayWithObjects: meNavController, nil]];
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects: contestNavController, meNavController, nil]];
     
     // Finish and return
     self.window.rootViewController = self.tabBarController;

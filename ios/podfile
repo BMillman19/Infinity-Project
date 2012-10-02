@@ -1,7 +1,5 @@
 platform :ios
 
 pod 'PrettyKit'
-pod 'SSToolkit'
-pod 'SSPullToRefresh'
 pod 'AFNetworking'
-
+pod 'SSPullToRefresh'

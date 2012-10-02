@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A83716B02131488D8CDC393E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F48B9ABE3E664FA297376D87 /* libPods.a */; };
+		E50C079D1617A7D9006260A3 /* IPContestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50C079C1617A7D9006260A3 /* IPContestViewController.m */; };
+		E50C079F1617A856006260A3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E50C079E1617A856006260A3 /* Default-568h@2x.png */; };
+		E50C07A31617A9D5006260A3 /* IPUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E50C07A21617A9D5006260A3 /* IPUserModel.m */; };
+		E50C07A61617A9F5006260A3 /* IPContestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E50C07A51617A9F5006260A3 /* IPContestModel.m */; };
+		E50C07A91617B223006260A3 /* IPSubmissionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E50C07A81617B223006260A3 /* IPSubmissionModel.m */; };
+		E5219FDF161A16E900C3FC73 /* IPContestPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5219FDE161A16E900C3FC73 /* IPContestPreviewCell.m */; };
 		E54B223F15DDAE3700D6013C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B223E15DDAE3700D6013C /* UIKit.framework */; };
 		E54B224115DDAE3700D6013C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B224015DDAE3700D6013C /* Foundation.framework */; };
 		E54B224315DDAE3700D6013C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B224215DDAE3700D6013C /* CoreGraphics.framework */; };
@@ -24,6 +30,17 @@
 
 /* Begin PBXFileReference section */
 		5AC7D1B79BDB4F08A85AF7A6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E50C079B1617A7D9006260A3 /* IPContestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPContestViewController.h; sourceTree = "<group>"; };
+		E50C079C1617A7D9006260A3 /* IPContestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPContestViewController.m; sourceTree = "<group>"; };
+		E50C079E1617A856006260A3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E50C07A11617A9D5006260A3 /* IPUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPUserModel.h; sourceTree = "<group>"; };
+		E50C07A21617A9D5006260A3 /* IPUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPUserModel.m; sourceTree = "<group>"; };
+		E50C07A41617A9F5006260A3 /* IPContestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPContestModel.h; sourceTree = "<group>"; };
+		E50C07A51617A9F5006260A3 /* IPContestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPContestModel.m; sourceTree = "<group>"; };
+		E50C07A71617B223006260A3 /* IPSubmissionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSubmissionModel.h; sourceTree = "<group>"; };
+		E50C07A81617B223006260A3 /* IPSubmissionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSubmissionModel.m; sourceTree = "<group>"; };
+		E5219FDD161A16E900C3FC73 /* IPContestPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPContestPreviewCell.h; sourceTree = "<group>"; };
+		E5219FDE161A16E900C3FC73 /* IPContestPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPContestPreviewCell.m; sourceTree = "<group>"; };
 		E54B223A15DDAE3700D6013C /* InfinityProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfinityProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54B223E15DDAE3700D6013C /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E54B224015DDAE3700D6013C /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,10 +79,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E50C079A1617A672006260A3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E54B229915DDE36800D6013C /* IPAppDelegate.h */,
+				E54B229A15DDE36800D6013C /* IPAppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		E50C07A01617A926006260A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E50C07A11617A9D5006260A3 /* IPUserModel.h */,
+				E50C07A21617A9D5006260A3 /* IPUserModel.m */,
+				E50C07A41617A9F5006260A3 /* IPContestModel.h */,
+				E50C07A51617A9F5006260A3 /* IPContestModel.m */,
+				E50C07A71617B223006260A3 /* IPSubmissionModel.h */,
+				E50C07A81617B223006260A3 /* IPSubmissionModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E5219FDB161A15E900C3FC73 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E5219FDD161A16E900C3FC73 /* IPContestPreviewCell.h */,
+				E5219FDE161A16E900C3FC73 /* IPContestPreviewCell.m */,
+			);
+			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		E54B222F15DDAE3400D6013C = {
 			isa = PBXGroup;
 			children = (
+				E50C079E1617A856006260A3 /* Default-568h@2x.png */,
 				E54B229415DDE36800D6013C /* Classes */,
+				E54B22A815DDE39C00D6013C /* Supporting Files */,
 				E54B223D15DDAE3700D6013C /* Frameworks */,
 				E54B226115DDB00700D6013C /* Resources */,
 				E54B223B15DDAE3700D6013C /* Products */,
@@ -125,11 +175,10 @@
 		E54B229415DDE36800D6013C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E54B22A715DDE38200D6013C /* Controllers */,
+				E50C079A1617A672006260A3 /* Application */,
+				E50C07A01617A926006260A3 /* Models */,
 				E54B22A615DDE37500D6013C /* Views */,
-				E54B229915DDE36800D6013C /* IPAppDelegate.h */,
-				E54B229A15DDE36800D6013C /* IPAppDelegate.m */,
-				E54B22A815DDE39C00D6013C /* Supporting Files */,
+				E54B22A715DDE38200D6013C /* Controllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -137,6 +186,7 @@
 		E54B22A615DDE37500D6013C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5219FDB161A15E900C3FC73 /* CollectionViewCells */,
 				E54B229B15DDE36800D6013C /* IPMeView.h */,
 				E54B229C15DDE36800D6013C /* IPMeView.m */,
 			);
@@ -148,6 +198,8 @@
 			children = (
 				E54B229D15DDE36800D6013C /* IPMeViewController.h */,
 				E54B229E15DDE36800D6013C /* IPMeViewController.m */,
+				E50C079B1617A7D9006260A3 /* IPContestViewController.h */,
+				E50C079C1617A7D9006260A3 /* IPContestViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +213,7 @@
 				E54B229F15DDE36800D6013C /* main.m */,
 			);
 			name = "Supporting Files";
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +270,7 @@
 			files = (
 				E54B22A015DDE36800D6013C /* InfoPlist.strings in Resources */,
 				E54B22A115DDE36800D6013C /* InfinityProject-Info.plist in Resources */,
+				E50C079F1617A856006260A3 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +305,11 @@
 				E54B22A315DDE36800D6013C /* IPMeView.m in Sources */,
 				E54B22A415DDE36800D6013C /* IPMeViewController.m in Sources */,
 				E54B22A515DDE36800D6013C /* main.m in Sources */,
+				E50C079D1617A7D9006260A3 /* IPContestViewController.m in Sources */,
+				E50C07A31617A9D5006260A3 /* IPUserModel.m in Sources */,
+				E50C07A61617A9F5006260A3 /* IPContestModel.m in Sources */,
+				E50C07A91617B223006260A3 /* IPSubmissionModel.m in Sources */,
+				E5219FDF161A16E900C3FC73 /* IPContestPreviewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
