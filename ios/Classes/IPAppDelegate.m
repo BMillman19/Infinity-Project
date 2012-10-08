@@ -8,14 +8,14 @@
 
 #import "IPAppDelegate.h"
 
-#import "IPContestViewController.h"
+#import "IPContestCollectionViewController.h"
 #import "IPMeViewController.h"
 #import "IPContestModel.h"
 
 @interface IPAppDelegate ()
 
 // The main view controllers
-@property (nonatomic, strong) IPContestViewController *contestViewController;
+@property (nonatomic, strong) IPContestCollectionViewController *contestCollectionViewController;
 @property (nonatomic, strong) IPMeViewController *meViewController;
 
 @end
@@ -24,7 +24,7 @@
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
-@synthesize contestViewController = _contestViewController;
+@synthesize contestCollectionViewController = _contestCollectionViewController;
 @synthesize meViewController = _meViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -33,10 +33,10 @@
     // Override point for customization after application launch.
     
     //Set up the contests tab
-    self.contestViewController = [[IPContestViewController alloc] init];
-    UINavigationController *contestNavController = [[UINavigationController alloc] initWithRootViewController:self.contestViewController];
+    self.contestCollectionViewController = [[IPContestCollectionViewController alloc] init];
+    UINavigationController *contestCollectionNavController = [[UINavigationController alloc] initWithRootViewController:self.contestCollectionViewController];
     UITabBarItem *contestTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Contests" image:nil tag:0];
-    [contestNavController setTabBarItem:contestTabBarItem];
+    [contestCollectionNavController setTabBarItem:contestTabBarItem];
         
     // Set up the current user profile tab
     self.meViewController = [[IPMeViewController alloc] init];
@@ -47,12 +47,20 @@
     // Set up the tab bar controller
     self.tabBarController = [[UITabBarController alloc] init];
     [self.tabBarController setDelegate:self];
-    [self.tabBarController setViewControllers:[NSArray arrayWithObjects: contestNavController, meNavController, nil]];
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects: contestCollectionNavController, meNavController, nil]];
+    
+    // Set style
+    [self applyStyle];
     
     // Finish and return
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)applyStyle
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
